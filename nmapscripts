@@ -1,0 +1,49 @@
+nmap --script broadcast-dhcp-discover scanme.nmap.org
+nmap --script broadcast-dns-service-discovery scanme.nmap.org
+sudo nmap -sS --script default scanme.nmap.org
+sudo nmap -sS --script safe 127.0.0.1
+nmap -sV --script version scanme.nmap.org
+nmap --script http-title scanme.nmap.org
+nmap --script http-headers 127.0.0.1
+nmap --script vuln 127.0.0.1
+nmap --script http-vuln-cve2017-5638 scanme.nmap.org
+nmap --script smb-vuln-ms17-010 scanme.nmap.org
+nmap --script smb-vuln-cve-2017-7494 scanme.nmap.org
+nmap --script ftp-brute scanme.nmap.org
+nmap --script http-brute scanme.nmap.org
+nmap --script ssh-brute scanme.nmap.org
+nmap --script ssl-cert vitechinc.com
+nmap --script dns-brute scanme.nmap.org
+nmap --script http-shellshock scanme.nmap.org
+nmap --script ftp-vsftpd-backdoor scanme.nmap.org
+sudo nmap --script firewalk scanme.nmap.org
+nmap --script asn-query scanme.nmap.org
+nmap --script http-enum scanme.nmap.org
+nmap --script smb-enum-shares scanme.nmap.org
+nmap --script smb-enum-users scanme.nmap.org
+nmap --script snmp-sysdescr scanme.nmap.org
+nmap --script ftp-anon scanme.nmap.org
+nmap --script http-methods scanme.nmap.org
+nmap --script http-robots.txt scanme.nmap.org
+nmap --script http-sitemap-generator scanme.nmap.org
+nmap --script imap-capabilities scanme.nmap.org
+nmap --script pop3-capabilities scanme.nmap.org
+nmap --script smtp-commands scanme.nmap.org
+nmap --script mysql-info scanme.nmap.org
+nmap --script rdp-enum-encryption scanme.nmap.org
+nmap --script ntp-monlist scanme.nmap.org
+nmap --script ike-version scanme.nmap.org
+nmap --script dns-zone-transfer scanme.nmap.org
+nmap --script sip-methods scanme.nmap.org
+nmap --script sip-enum-users scanme.nmap.org
+nmap --script smb-os-discovery scanme.nmap.org
+nmap --script ssh-auth-methods -p 22 scanme.nmap.org
+nmap --script ssh-hostkey -p 22 scanme.nmap.org
+nmap --script smtp-open-relay -p 25 scanme.nmap.org
+nmap --script smtp-ntlm-info -p 25 scanme.nmap.org
+nmap --script http-backup-finder -p 80 scanme.nmap.org
+nmap --script http-useragent-tester -p 80 scanme.nmap.org
+nmap --script nping-echo -p 9929 scanme.nmap.org
+nmap --script backorifice-brute -p 31337 scanme.nmap.org
+nmap --script ssh2-enum-algos -p 22 scanme.nmap.org
+nmap --script ssh-publickey-acceptance -p 22 scanme.nmap.org
