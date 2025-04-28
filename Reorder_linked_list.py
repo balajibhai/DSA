@@ -5,10 +5,15 @@ class Node:
         self.data = data
         self.next = None
 
-arr = [1, 2]
+arr = [1, 2, 3, 4, 5]
 l = len(arr)
 head = Node(1)
 p = head
+
+# If there are only three elements given
+
+# if head.next == None or head.next.next == None:
+#     print(arr)
 
 for i in range(1, l):
     p.next = Node(arr[i])
